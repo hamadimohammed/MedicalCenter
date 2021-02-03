@@ -34,7 +34,7 @@ Route::post('/Secretaires/CreateSecretaire', [SecretaireController::class,'creat
 
 Route::get('/Patients', [PatientController::class, 'get_patients'])->name('patients');
 Route::get('/Patients/Create', [PatientController::class, 'get_patient_create_view'])->name('patient_create');
-Route::post('/Patients/Create', [PatientController::class, 'patient_create_submit'])->name('patient_create_submit');
+Route::post('/Patients/Create', [PatientController::class, 'patient_create'])->name('patient_create_submit');
 Route::post('/Patients/Update', [PatientController::class, 'update_patient_view'])->name('get_update_patient_view');
 Route::post('/Patients/Update/Submit', [PatientController::class, 'update_patient'])->name('update_patient');
 

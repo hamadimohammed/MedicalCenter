@@ -119,7 +119,7 @@
                   <div class="col-md-6 pr-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">{{__("Mot de pass")}}</label>
-                      <input class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ __('New Password') }}" type="password" name="password" required>
+                      <input class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ __('Nouveau Mot de passe') }}" type="password" name="password" required>
                     </div>
                     @error('password')
                           <div class="alert alert-danger">{{$message}}</div>
